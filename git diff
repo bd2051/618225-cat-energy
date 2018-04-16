@@ -1,0 +1,126 @@
+[1mdiff --git a/source/index.html b/source/index.html[m
+[1mindex b434c86..316d17e 100644[m
+[1m--- a/source/index.html[m
+[1m+++ b/source/index.html[m
+[36m@@ -6,7 +6,119 @@[m
+   </head>[m
+   <body>[m
+ [m
+[31m-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>[m
+[32m+[m[32m  <header class="page-header">[m
+[32m+[m[32m    <a class="page-header__logo">[m
+[32m+[m[32m      <img class="page-header__logo-image" src="img/logo.svg" width="33" height="38" alt="Логотип Cat Energy">[m
+[32m+[m[32m    </a>[m
+[32m+[m[32m    <a class="page-header__logo">[m
+[32m+[m[32m      <img class="page-header__text-logo" src="img/text_logo.svg" width="101" height="18" alt="Cat Energy">[m
+[32m+[m[32m    </a>[m
+[32m+[m[32m    <nav class="main-nav">[m
+[32m+[m[32m      <button class="main-nav__toggle" type="button">Открыть меню</button>[m
+[32m+[m[32m      <ul class="main-nav__list site-list">[m
+[32m+[m[32m        <li class="site-list__item">[m
+[32m+[m[32m          <a>Главная</a>[m
+[32m+[m[32m        </li>[m
+[32m+[m[32m        <li class="site-list__item">[m
+[32m+[m[32m          <a href="catalog.html">Каталог продукции</a>[m
+[32m+[m[32m        </li>[m
+[32m+[m[32m        <li class="site-list__item">[m
+[32m+[m[32m          <a href="form.html">Подбор продукции</a>[m
+[32m+[m[32m        </li>[m
+[32m+[m[32m      </ul>[m
+[32m+[m[32m    </nav>[m
+[32m+[m[32m  </header>[m
+[32m+[m
+[32m+[m[32m  <main class="page-main">[m
+[32m+[m[32m    <div class="page-main__wrapper">[m
+[32m+[m[32m      <h1 class="page-main__title">Функциональное питание для котов</h1>[m
+[32m+[m[32m      <section class="promo">[m
+[32m+[m[32m        <p class="promo__text">Занялся собой? Займись котом!</p>[m
+[32m+[m[32m        <img class="promo__index-can" src="img/index-can.png" width="280" height="271" alt="Cat Energy Pro Курица">[m
+[32m+[m[32m      </section>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m    <section class="program-selection">[m
+[32m+[m[32m      <h2 class="visually-hidden">Выбрать программу</h2>[m
+[32m+[m[32m      <a class="button-green program-selection__button" href="form.html">Подобрать программу</a>[m
+[32m+[m[32m      <section class="slim">[m
+[32m+[m[32m        <h3 class="slim__title">Похудение</h3>[m
+[32m+[m[32m        <p class="slim__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?[m
+[32m+[m[32m        Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>[m
+[32m+[m[32m        <a class="slim__detailed" href="catalog.html#slim">Каталог Slim</a>[m
+[32m+[m[32m      </section>[m
+[32m+[m[32m      <section class="weight-gain">[m
+[32m+[m[32m        <h3 class="weight-gain__title">Набор массы</h3>[m
+[32m+[m[32m        <p class="weight-gain__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>[m
+[32m+[m[32m        <a class="weight-gain__detailed" href="catalog.html#pro">Каталог Slim</a>[m
+[32m+[m[32m      </section>[m
+[32m+[m[32m    </section>[m
+[32m+[m[32m    <section class="how-it-works">[m
+[32m+[m[32m      <h2 class="how-it-works__title">Как это работает</h2>[m
+[32m+[m[32m      <ul class="how-it-works__list">[m
+[32m+[m[32m        <li class="how-it-works__item">[m
+[32m+[m[32m          <p class="how-it-works__text">Функциональное питание содержит только полезные питательные вещества.</p>[m
+[32m+[m[32m        </li>[m
+[32m+[m[32m        <li class="how-it-works__item">[m
+[32m+[m[32m          <p class="how-it-works__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>[m
+[32m+[m[32m        </li>[m
+[32m+[m[32m        <li class="how-it-works__item">[m
+[32m+[m[32m          <p class="how-it-works__text">Замените один-два приема обычной еды на наше функциональное питание.</p>[m
+[32m+[m[32m        </li>[m
+[32m+[m[32m        <li class="how-it-works__item">[m
+[32m+[m[32m          <p class="how-it-works__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>[m
+[32m+[m[32m        </li>[m
+[32m+[m[32m      </ul>[m
+[32m+[m[32m    </section>[m
+[32m+[m[32m    <section class="living-example">[m
+[32m+[m[32m      <h2 class="living-example__title">Живой пример</h2>[m
+[32m+[m[32m      <p class="living-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>[m
+[32m+[m[32m      <div class="living-example__wrapper">[m
+[32m+[m[32m        <span class="living-example__brief">5 кг</span>[m
+[32m+[m[32m        <span class="living-example__brief-title">снижение веса</span>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m      <div class="living-example__wrapper">[m
+[32m+[m[32m        <span class="living-example__brief">60 дней</span>[m
+[32m+[m[32m        <span class="living-example__brief-title">затрачено времени</span>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m      <span class="living-example__price">Затраты на питание: 15 000 руб.</span>[m
+[32m+[m[32m      <img class="living-example__before" src="img/before.png" width="320" height="240" alt="Полный кот">[m
+[32m+[m[32m      <img class="living-example__after" src="img/after.png" width="320" height="240" alt="Худой кот">[m
+[32m+[m[32m      <div class="living-example__slider">[m
+[32m+[m[32m        <span class="living-example__slider-label">Было</span>[m
+[32m+[m[32m        <button class="living-example__slider-button" type="button"></button>[m
+[32m+[m[32m        <span class="living-example__slider-label">Стало</span>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m    </section>[m
+[32m+[m[32m  </main>[m
+[32m+[m
+[32m+[m[32m  <footer class="page-footer">[m
+[32m+[m[32m    <div class="page-footer__location location">[m
+[32m+[m[32m      <b class="location__invite">Приглашаем к сотрудничеству дилеров!</b>[m
+[32m+[m[32m      <p class="location__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>[m
+[32m+[m[32m      <img class="location__map" src="img/map.png" width="320" height="360" alt="Карта">[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m    <a class="page-footer__logo">[m
+[32m+[m[32m      <img class="page-header__text-logo" src="img/text_logo.svg" width="101" height="18" alt="Cat Energy">[m
+[32m+[m[32m    </a>[m
+[32m+[m[32m    <div class="page-footer__social social">[m
+[32m+[m[32m      <ul class="social__list">[m
+[32m+[m[32m        <li class="social__item">[m
+[32m+[m[32m          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>[m
+[32m+[m[32m        </li>[m
+[32m+[m[32m        <li class="social__item">[m
+[32m+[m[32m          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>[m
+[32m+[m[32m        </li>[m
+[32m+[m[32m        <li class="social__item">[m
+[32m+[m[32m          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>[m
+[32m+[m[32m        </li>[m
+[32m+[m[32m      </ul>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m    <div class="page-footer__copyright copyright">[m
+[32m+[m[32m      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m  </footer>[m
+ [m
+   </body>[m
+ </html>[m
+[32m+[m
+[32m+[m[32m<!--     <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p> -->[m
+\ No newline at end of file[m
