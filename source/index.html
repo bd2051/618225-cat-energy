@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="body-wrapper">
 
   <header class="page-header">
     <a class="page-header__logo">
@@ -17,13 +19,13 @@
       <button class="main-nav__toggle" type="button">Открыть меню</button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
-          <a>Главная</a>
+          <a class="site-list__link">Главная</a>
         </li>
         <li class="site-list__item">
-          <a href="catalog.html">Каталог продукции</a>
+          <a class="site-list__link" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="site-list__item">
-          <a href="form.html">Подбор продукции</a>
+          <a class="site-list__link" href="form.html">Подбор продукции</a>
         </li>
       </ul>
     </nav>
@@ -34,22 +36,22 @@
       <h1 class="page-main__title">Функциональное питание для котов</h1>
       <section class="promo">
         <p class="promo__text">Занялся собой? Займись котом!</p>
-        <img class="promo__index-can" src="http://placehold.it/280x271" width="280" height="271" alt="Cat Energy Pro Курица">
+        <img class="promo__index-can" src="img/index-can-mobile@1x.png" width="280" height="271" alt="Cat Energy Pro Курица">
       </section>
     </div>
     <section class="program-selection">
       <h2 class="visually-hidden">Выбрать программу</h2>
       <a class="button program-selection__button" href="form.html">Подобрать программу</a>
-      <section class="slim">
+      <section class="program-selection_choice slim">
         <h3 class="slim__title">Похудение</h3>
         <p class="slim__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
         Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
         <a class="slim__detailed" href="catalog.html#slim">Каталог Slim</a>
       </section>
-      <section class="weight-gain">
+      <section class="program-selection_choice weight-gain">
         <h3 class="weight-gain__title">Набор массы</h3>
         <p class="weight-gain__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-        <a class="weight-gain__detailed" href="catalog.html#pro">Каталог Slim</a>
+        <a class="weight-gain__detailed" href="catalog.html#pro">Каталог Pro</a>
       </section>
     </section>
     <section class="how-it-works">
@@ -92,7 +94,7 @@
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__location location">
+    <div class="page-footer__location page-footer__location--index-page location">
       <b class="location__invite">Приглашаем к сотрудничеству дилеров!</b>
       <p class="location__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       <img class="location__map" src="http://placehold.it/320x360" width="320" height="360" alt="Карта">
@@ -117,8 +119,6 @@
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
     </div>
   </footer>
-
+<!--     <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p> -->
   </body>
 </html>
-
-<!--     <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p> -->
