@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,500&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="body-wrapper">
 
   <header class="page-header">
     <a class="page-header__logo">
@@ -31,11 +31,11 @@
     </nav>
   </header>
 
-  <main class="page-main">
+  <main class="page-main page-main--padding">
     <h1 class="page-main__title page-main__title--otder-page">Каталог продукции</h1>
     <section class="main-products">
       <h2 class="visually-hidden">Основные товары</h2>
-      <ul>
+      <ul class="main-products__items">
         <li class="main-products__item item">
           <a class="item__link" href="#">
             <img class="item__image" src="http://placehold.it/140x144" widtd="140" height="144" alt="">
@@ -191,7 +191,7 @@
     </section>
     <section class="optional-products">
       <h2 class="optional-products__title">Дополнительные товары</h2>
-      <ul>
+      <ul class="optional-products__items">
         <li class="optional-products__item optional-item">
           <a class="optional-item__link" href="#">
             <h3 class="optional-item__title">Сахарозаменитель</h3>
