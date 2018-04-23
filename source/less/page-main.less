@@ -35,3 +35,49 @@
   font-size: 14px;
   line-height: 16px;
 }
+
+@media (min-width: @tablet) {
+  .page-main__wrapper {
+    background: none;
+    padding: 0 30px;
+  }
+  
+  .page-main__title {
+    width: 425px;
+    padding-left: 90px;
+
+    font-size: 60px;
+    line-height: 60px;
+    color: #111111;
+    text-align: left;
+  }
+
+  .page-main__promo-text {
+    width: 425px;
+    padding-left: 90px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .page-main {
+    margin-top: -160px;
+  }
+
+  .page-main__wrapper {
+    min-height: 570px;
+    padding: 0;
+    padding-top: 160px;
+
+    background-color: #67ab3e;
+    background: url("../img/index-background-desktop.jpg") top right no-repeat;
+    background-size: 50% auto;
+  }
+  
+  .page-main__title {
+    padding-left: 190px;
+  }
+  
+  .page-main__promo-text {
+    padding-left: 190px;
+  }
+}
