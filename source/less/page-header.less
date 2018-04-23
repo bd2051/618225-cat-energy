@@ -6,3 +6,55 @@
   color: #111111;
   text-transform: uppercase;
 }
+
+.page-header__logo--mobile {
+  display: inline;
+}
+
+.page-header__logo--tablet {
+  display: none;
+}
+
+.page-header__logo--desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .page-header {
+    display: flex;
+    
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  .page-header__logo--mobile {
+    display: none;
+  }
+
+  .page-header__logo--tablet {
+    display: inline;
+  }
+
+  .page-header__logo--desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 1440px) {
+  .page-header {
+    font-size: 20px;
+  }
+
+  .page-header__logo--mobile {
+    display: none;
+  }
+
+  .page-header__logo--tablet {
+    display: none;
+  }
+
+  .page-header__logo--desktop {
+    display: inline;
+  }
+}
