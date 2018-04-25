@@ -9,3 +9,29 @@
 .page-footer__copyright {
   padding: 0 20px;
 }
+
+@media (min-width: @tablet) {
+  .page-footer__location {
+    padding: 0 70px;
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .page-footer {
+    position: relative;
+  }
+
+  .page-footer__location {
+    padding: 0;
+  }
+
+  .page-footer__wrapper {
+    padding: 0 110px;
+  }
+}
