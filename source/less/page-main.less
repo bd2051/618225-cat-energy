@@ -1,4 +1,4 @@
-.page-main--padding {
+.page-main--indent {
   padding: 0 20px;
 }
 
@@ -37,6 +37,10 @@
 }
 
 @media (min-width: @tablet) {
+  .page-main--indent {
+    padding: 0 30px;
+  }
+
   .page-main__wrapper {
     background: none;
     padding: 0 30px;
@@ -52,6 +56,11 @@
     text-align: left;
   }
 
+  .page-main__title--other-page {
+    width: auto;
+    padding-left: 0;
+  }
+
   .page-main__promo-text {
     width: 425px;
     padding-left: 90px;
@@ -61,6 +70,11 @@
 @media (min-width: @desktop) {
   .page-main {
     margin-top: -160px;
+  }
+
+  .page-main--indent {
+    padding: 0 110px;
+    margin-top: 0;
   }
 
   .page-main__wrapper {
@@ -75,6 +89,10 @@
   
   .page-main__title {
     padding-left: 190px;
+  }
+  
+  .page-main__title--other-page {
+    padding-left: 0;
   }
   
   .page-main__promo-text {
