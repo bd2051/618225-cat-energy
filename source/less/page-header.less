@@ -7,18 +7,6 @@
   text-transform: uppercase;
 }
 
-.page-header__logo--mobile {
-  display: inline;
-}
-
-.page-header__logo--tablet {
-  display: none;
-}
-
-.page-header__logo--desktop {
-  display: none;
-}
-
 @media (min-width: @tablet) {
   .page-header {
     display: flex;
@@ -27,34 +15,10 @@
     line-height: 24px;
     font-weight: 400;
   }
-
-  .page-header__logo--mobile {
-    display: none;
-  }
-
-  .page-header__logo--tablet {
-    display: inline;
-  }
-
-  .page-header__logo--desktop {
-    display: none;
-  }
 }
 
 @media (min-width: @desktop) {
   .page-header {
     font-size: 20px;
-  }
-
-  .page-header__logo--mobile {
-    display: none;
-  }
-
-  .page-header__logo--tablet {
-    display: none;
-  }
-
-  .page-header__logo--desktop {
-    display: inline;
   }
 }
