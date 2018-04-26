@@ -37,6 +37,10 @@
 }
 
 @media (min-width: @tablet) {
+  .page-main--indent {
+    padding: 0;
+  }
+
   .page-main__wrapper {
     background: none;
     padding: 0 30px;
@@ -69,7 +73,7 @@
   }
 
   .page-main--indent {
-    padding: 0 110px;
+    padding: 0 70px;
     margin-top: 0;
   }
 
@@ -88,10 +92,15 @@
   }
 
   .page-main__title--other-page {
-    padding-left: 0;
+    padding-left: 40px;
   }
 
   .page-main__promo-text {
     padding-left: 190px;
+  }
+
+  .page-main__catalog-wrapper {
+    display: flex;
+    justify-content: space-between;
   }
 }

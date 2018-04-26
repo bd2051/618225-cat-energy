@@ -24,5 +24,30 @@
 @media (min-width: @tablet) {
   .main-products__items {
     display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main-products__item {
+    width: 50%;
+    padding: 0 30px;
+    box-sizing: border-box;
+  }
+
+  .main-products__detailed {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .main-products__promo {
+    font-size: 16px;
+    line-height: auto;
+  }
+}
+
+@media (min-width: @desktop) {
+  .main-products__item {
+    width: 25%;
+    padding: 0 40px;
+    box-sizing: border-box;
   }
 }
