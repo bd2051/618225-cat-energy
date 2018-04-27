@@ -1,8 +1,24 @@
 .optional-item__title {
-  font-family: 'Oswald', Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
   color: #222222;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet) {
+  .optional-item {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .optional-item__properties {
+    margin-left: auto;
+  }
+
+  .optional-item__title {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

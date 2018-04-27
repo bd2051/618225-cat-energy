@@ -1,8 +1,35 @@
 .optional__title {
-  font-family: 'Oswald', Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
   color: #111111;
   text-transform: none;
+}
+
+@media (min-width: @tablet) {
+  .optional__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .optional__input {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .optional__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .optional__field {
+    width: 50%;
+  }
+}
+
+@media (min-width: @desktop) {
+  .optional__field {
+    width: 25%;
+  }
 }

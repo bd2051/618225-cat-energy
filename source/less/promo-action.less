@@ -1,6 +1,6 @@
 .promo-action {
-  background-color: #6fb346;
   background: url("../img/gift-photo-mobile@1x.jpg") no-repeat;
+  background-color: #6fb346;
   background-size: 100% auto;
 }
 
@@ -8,4 +8,17 @@
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+}
+
+@media (min-width: @tablet) {
+  .promo-action {
+    margin: 0 30px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .promo-action {
+    margin: 0 40px;
+    margin-top: 150px;
+  }
 }

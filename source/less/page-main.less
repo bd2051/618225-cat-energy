@@ -1,15 +1,15 @@
-.page-main--padding {
+.page-main--indent {
   padding: 0 20px;
 }
 
 .page-main__wrapper {
-  background-color: #67ab3e;
   background: url("../img/index-background-mobile@1x.jpg") no-repeat;
+  background-color: #67ab3e;
   background-size: 100% auto;
 }
 
 .page-main__title {
-  font-family: 'Oswald', Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
@@ -23,7 +23,7 @@
 }
 
 .page-main__text {
-  font-family: 'Oswald', Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -34,4 +34,94 @@
 .page-main__note {
   font-size: 14px;
   line-height: 16px;
+}
+
+@media (min-width: @tablet) {
+  .page-main--indent {
+    padding: 0;
+  }
+
+  .page-main__wrapper {
+    background: none;
+    padding: 0 30px;
+  }
+
+  .page-main__title {
+    width: 425px;
+    padding-left: 90px;
+
+    font-size: 60px;
+    line-height: 60px;
+    color: #111111;
+    text-align: left;
+  }
+
+  .page-main__title--other-page {
+    width: auto;
+    padding: 0 30px;
+  }
+
+  .page-main__promo-text {
+    width: 425px;
+    padding-left: 90px;
+  }
+
+  .page-main__text {
+    padding: 0 70px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .page-main__form {
+    padding: 0 70px;
+  }
+
+  .page-main__note {
+    padding-left: 415px;
+
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .page-main {
+    margin-top: -160px;
+  }
+
+  .page-main--indent {
+    padding: 0 70px;
+    margin-top: 0;
+  }
+
+  .page-main__wrapper {
+    min-height: 570px;
+    padding: 0;
+    padding-top: 160px;
+
+    background: url("../img/index-background-desktop.jpg") top right no-repeat;
+    background-size: 50% auto;
+  }
+
+  .page-main__title {
+    padding-left: 190px;
+  }
+
+  .page-main__title--other-page {
+    padding-left: 40px;
+  }
+
+  .page-main__promo-text {
+    padding-left: 190px;
+  }
+
+  .page-main__catalog-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-main__note {
+    padding-left: 760px;
+  }
 }

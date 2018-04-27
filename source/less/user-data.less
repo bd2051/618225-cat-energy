@@ -1,5 +1,5 @@
 .user-data__title {
-  font-family: 'Oswald', Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
@@ -8,7 +8,7 @@
 }
 
 .user-data__input {
-  font-family: 'Oswald', Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -30,4 +30,22 @@
 
 .user-data__input:-ms-input-placeholder {
   color: #444444;
+}
+
+@media (min-width: @tablet) {
+  .user-data__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .user-data__input {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .user-data__wrapper {
+    display: flex;
+  }
 }

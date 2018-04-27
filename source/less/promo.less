@@ -1,9 +1,38 @@
 .promo__text {
-  font-family: 'Oswald', Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
+}
+
+@media (min-width: @tablet) {
+  .promo__text {
+    font-size: 20px;
+    line-height: 20px;
+    color: #111111;
+    text-align: left;
+  }
+
+  .promo__wrapper {
+    height: 609px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .promo {
+    position: relative;
+  }
+
+  .promo__index-can {
+    position: absolute;
+    top: -200px;
+    left: 40%;
+  }
+
+  .promo__wrapper {
+    height: auto;
+  }
 }

@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Каталог функционального питания Кэт энерджи</title>
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,500&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -10,13 +11,10 @@
 
   <header class="page-header">
     <a class="page-header__logo">
-      <img class="page-header__logo-image" src="http://placehold.it/33x38" widtd="33" height="38" alt="Логотип Cat Energy">
+      <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип Cat Energy">
     </a>
-    <a class="page-header__logo">
-      <img class="page-header__text-logo" src="http://placehold.it/33x38" widtd="101" height="18" alt="Cat Energy">
-    </a>
+    <button class="main-nav__toggle" type="button">Открыть меню</button>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
           <a class="site-list__link" href="index.html">Главная</a>
@@ -31,8 +29,8 @@
     </nav>
   </header>
 
-  <main class="page-main page-main--padding">
-    <h1 class="page-main__title page-main__title--otder-page">Каталог продукции</h1>
+  <main class="page-main page-main--indent">
+    <h1 class="page-main__title page-main__title--other-page">Каталог продукции</h1>
     <section class="main-products">
       <h2 class="visually-hidden">Основные товары</h2>
       <ul class="main-products__items">
@@ -183,95 +181,101 @@
           </table>
           <a class="button item__button" href="#">Заказать</a>
         </li>
-      </ul>
-      <button class="main-products__plus-button" type="button">Показать ещё</button>
-      <b class="main-products__detailed">Показать еще 100500 товаров</b>
-      <p class="main-products__promo">На самом деле вкусов гораздо больше!</p>
-      <a class="button button--show-all main-products__button" href="#">Показать все</a>
-    </section>
-    <section class="optional-products">
-      <h2 class="optional-products__title">Дополнительные товары</h2>
-      <ul class="optional-products__items">
-        <li class="optional-products__item optional-item">
-          <a class="optional-item__link" href="#">
-            <h3 class="optional-item__title">Сахарозаменитель</h3>
-          </a>
-          <table class="optional-item__properties optional-properties">
-            <tr>
-              <td class="optional-properties__size">1 упаковка(100 г)</td>
-              <td class="optional-properties__price">100 Р.</td>
-            </tr>
-          </table>
-          <a class="button optional-item__button" href="#">Заказать</a>
-        </li>
-        <li class="optional-products__item optional-item">
-          <a class="optional-item__link" href="#">
-            <h3 class="optional-item__title">Питьевая вода</h3>
-          </a>
-          <table class="optional-item__properties optional-properties">
-            <tr>
-              <td class="optional-properties__size">5 литров</td>
-              <td class="optional-properties__price">50 Р.</td>
-            </tr>
-          </table>
-          <a class="button optional-item__button" href="#">Заказать</a>
-        </li>
-        <li class="optional-products__item optional-item">
-          <a class="optional-item__link" href="#">
-            <h3 class="optional-item__title">Молоко</h3>
-          </a>
-          <table class="optional-item__properties optional-properties">
-            <tr>
-              <td class="optional-properties__size">1 литр</td>
-              <td class="optional-properties__price">100 Р.</td>
-            </tr>
-          </table>
-          <a class="button optional-item__button" href="#">Заказать</a>
-        </li>
-        <li class="optional-products__item optional-item">
-          <a class="optional-item__link" href="#">
-            <h3 class="optional-item__title">Витамины</h3>
-          </a>
-          <table class="optional-item__properties optional-properties">
-            <tr>
-              <td class="optional-properties__size">1 упаковка(30 г)</td>
-              <td class="optional-properties__price">300 Р.</td>
-            </tr>
-          </table>
-          <a class="button optional-item__button" href="#">Заказать</a>
+        <li class="main-products__item">
+          <button class="main-products__plus-button" type="button">Показать ещё</button>
+          <b class="main-products__detailed">Показать еще 100500 товаров</b>
+          <p class="main-products__promo">На самом деле вкусов гораздо больше!</p>
+          <a class="button button--show-all main-products__button" href="#">Показать все</a>
         </li>
       </ul>
     </section>
-    <section class="promo-action">
-      <h2 class="visually-hidden">Промоакция</h2>
-      <p class="promo-action__text">Закажите все и получите чехол для кота в подарок!</p>
-    </section>
+    <div class="page-main__catalog-wrapper">
+      <section class="optional-products">
+        <h2 class="optional-products__title">Дополнительные товары</h2>
+        <ul class="optional-products__items">
+          <li class="optional-products__item optional-item">
+            <a class="optional-item__link" href="#">
+              <h3 class="optional-item__title">Сахарозаменитель</h3>
+            </a>
+            <table class="optional-item__properties optional-properties">
+              <tr>
+                <td class="optional-properties__size">1 упаковка(100 г)</td>
+                <td class="optional-properties__price">100 Р.</td>
+              </tr>
+            </table>
+            <a class="button button--optional-item" href="#">Заказать</a>
+          </li>
+          <li class="optional-products__item optional-item">
+            <a class="optional-item__link" href="#">
+              <h3 class="optional-item__title">Питьевая вода</h3>
+            </a>
+            <table class="optional-item__properties optional-properties">
+              <tr>
+                <td class="optional-properties__size">5 литров</td>
+                <td class="optional-properties__price">50 Р.</td>
+              </tr>
+            </table>
+            <a class="button button--optional-item" href="#">Заказать</a>
+          </li>
+          <li class="optional-products__item optional-item">
+            <a class="optional-item__link" href="#">
+              <h3 class="optional-item__title">Молоко</h3>
+            </a>
+            <table class="optional-item__properties optional-properties">
+              <tr>
+                <td class="optional-properties__size">1 литр</td>
+                <td class="optional-properties__price">100 Р.</td>
+              </tr>
+            </table>
+            <a class="button button--optional-item" href="#">Заказать</a>
+          </li>
+          <li class="optional-products__item optional-item">
+            <a class="optional-item__link" href="#">
+              <h3 class="optional-item__title">Витамины</h3>
+            </a>
+            <table class="optional-item__properties optional-properties">
+              <tr>
+                <td class="optional-properties__size">1 упаковка(30 г)</td>
+                <td class="optional-properties__price">300 Р.</td>
+              </tr>
+            </table>
+            <a class="button button--optional-item" href="#">Заказать</a>
+          </li>
+        </ul>
+      </section>
+      <section class="promo-action">
+        <h2 class="visually-hidden">Промоакция</h2>
+        <p class="promo-action__text">Закажите все и получите чехол для кота в подарок!</p>
+      </section>
+    </div>
   </main>
 
   <footer class="page-footer">
     <div class="page-footer__location location">
       <b class="location__invite">Приглашаем к сотрудничеству дилеров!</b>
       <p class="location__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-      <img class="location__map" src="http://placehold.it/320x360" widtd="320" height="360" alt="Карта">
     </div>
-    <a class="page-footer__logo">
-      <img class="page-footer__text-logo" src="http://placehold.it/128x24" widtd="128" height="24" alt="Cat Energy">
-    </a>
-    <div class="page-footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-        </li>
-      </ul>
-    </div>
-    <div class="page-footer__copyright copyright">
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    <img class="location__map" src="http://placehold.it/320x360" widtd="320" height="360" alt="Карта">
+    <div class="page-footer__wrapper">
+      <a class="page-footer__logo">
+        <img class="page-footer__text-logo" src="http://placehold.it/128x24" width="128" height="24" alt="Cat Energy">
+      </a>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
     </div>
   </footer>
 

@@ -1,5 +1,5 @@
 .optional-products__title {
-  font-family: 'Oswald', Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
@@ -13,4 +13,23 @@
 
 .optional-products__item {
   list-style: none;
+}
+
+@media (min-width: @tablet) {
+  .optional-products {
+    padding: 0 68px;
+  }
+
+  .optional-products__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .optional-products {
+    flex-grow: 1;
+
+    padding: 0 40px;
+  }
 }

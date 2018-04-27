@@ -3,12 +3,13 @@
 }
 
 .how-it-works__title {
-  font-family: 'Oswald', Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
   color: #111111;
 }
+
 .how-it-works__list {
   margin: 0;
   padding: 0;
@@ -19,4 +20,45 @@
   padding: 0;
 
   list-style: none;
+}
+
+@media (min-width: @tablet) {
+  .how-it-works {
+    padding: 0 30px;
+  }
+
+  .how-it-works__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .how-it-works__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .how-it-works__item {
+    width: 50%;
+  }
+
+  .how-it-works__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .how-it-works {
+    padding: 0 70px;
+  }
+
+  .how-it-works__title {
+    padding-left: 40px;
+  }
+
+  .how-it-works__item {
+    width: 25%;
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
 }

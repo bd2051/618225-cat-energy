@@ -5,3 +5,29 @@
 .program-selection_choice {
   background-color: #f2f2f2;
 }
+
+@media (min-width: @tablet) {
+  .program-selection {
+    position: relative;
+
+    padding: 0 30px;
+  }
+
+  .program-selection__button {
+    position: absolute;
+    top: -570px;
+    left: 120px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .program-selection {
+    display: flex;
+    padding: 0 70px;
+  }
+
+  .program-selection__button {
+    top: -270px;
+    left: 190px;
+  }
+}

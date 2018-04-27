@@ -2,7 +2,7 @@
   display: block;
   width: 100%;
 
-  font-family: 'Oswald', Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -18,4 +18,53 @@
   color: #111111;
 
   background-color: #f2f2f2;
+}
+
+@media (min-width: @tablet) {
+  .button {
+    width: 249px;
+    padding: 14px 0;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .button--programs {
+    width: 245px;
+    padding: 16px 0;
+
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .button--optional-item {
+    width: 100%;
+  }
+
+  .button--submit {
+    width: 283px;
+    padding: 14px 0;
+
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .button {
+    width: 170px;
+  }
+
+  .button--programs {
+    width: 245px;
+  }
+
+  .button--optional-item {
+    width: 245;
+  }
+
+  .button--submit {
+    width: 570px;
+  }
 }

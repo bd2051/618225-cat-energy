@@ -1,0 +1,23 @@
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: @tablet) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    display: flex;
+    justify-content: space-around/* временно */;
+
+    width: 560px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .main-nav {
+    margin-left: auto;
+  }
+}

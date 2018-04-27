@@ -1,12 +1,50 @@
+.location {
+  display: flex;
+  padding: 0 20px;
+}
+
 .location__invite {
-  font-family: 'Oswald', Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   color: #111111;
   text-transform: uppercase;
+  text-align: left;
 }
 
 .location__address {
+  margin-left: auto;
+
   line-height: 20px;
+  text-align: right;
+}
+
+.location__map {
+  width: 100%;
+}
+
+@media (min-width: @tablet) {
+  .location__invite {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .location__address {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .location {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+
+    width: 570px;
+    min-height: 200px;
+
+    background-color: #ffffff;
+  }
 }

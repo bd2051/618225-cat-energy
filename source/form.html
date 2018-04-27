@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Подбор питания Кэт энерджи</title>
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,500&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -10,13 +11,10 @@
 
   <header class="page-header">
     <a class="page-header__logo">
-      <img class="page-header__logo-image" src="http://placehold.it/33x38" width="33" height="38" alt="Логотип Cat Energy">
+      <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип Cat Energy">
     </a>
-    <a class="page-header__logo">
-      <img class="page-header__text-logo" src="http://placehold.it/101x18" width="101" height="18" alt="Cat Energy">
-    </a>
+    <button class="main-nav__toggle" type="button">Открыть меню</button>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
           <a class="site-list__link" href="index.html">Главная</a>
@@ -31,40 +29,52 @@
     </nav>
   </header>
 
-  <main class="page-main page-main--padding">
+  <main class="page-main page-main--indent">
     <h1 class="page-main__title page-main__title--other-page">Подбор программы</h1>
     <p class="page-main__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
     <form class="page-main__form cat-form" action="https://echo.htmlacademy.ru" method="post">
       <fieldset class="cat-form__fieldset cat-data">
         <legend class="visually-hidden">Данные котика</legend>
-        <p>
-          <label class="cat-data__label" for="cat-name">Имя:*</label>
-          <input class="cat-data__input" id="cat-name" type="text" name="name" placeholder="Барсик" required>
-        </p>
-        <p>
-          <label class="cat-data__label" for="cat-weight">Вес (кг):*</label>
-          <input class="cat-data__input" id="cat-weight" type="text" name="weight" placeholder="7" required>
-        </p>
-        <p>
-          <label class="cat-data__label" for="cat-age">Возраст (лет):</label>
-          <input class="cat-data__input" id="cat-age" type="text" name="ages" placeholder="7">
-        </p>
-        <p>
-          <label class="cat-data__label"><input type="radio" name="target" value="slim">Похудение</label>
-          <label class="cat-data__label"><input type="radio" name="target" value="weight-gain">Набор массы</label>
-          <label class="cat-data__label"><input type="radio" name="target" value="unknown">Не знаю (Нужен ваш совет)</label>
-        </p>
+        <div class="cat-data__wrapper">
+          <div>
+            <p>
+              <label class="cat-data__label" for="cat-name">Имя:*</label>
+              <input class="cat-data__input" id="cat-name" type="text" name="name" placeholder="Барсик" required>
+            </p>
+            <p>
+              <label class="cat-data__label" for="cat-weight">Вес (кг):*</label>
+              <input class="cat-data__input" id="cat-weight" type="text" name="weight" placeholder="7" required>
+            </p>
+            <p>
+              <label class="cat-data__label" for="cat-age">Возраст (лет):</label>
+              <input class="cat-data__input" id="cat-age" type="text" name="ages" placeholder="7">
+            </p>
+          </div>
+          <div>
+            <p>
+              <label class="cat-data__label"><input type="radio" name="target" value="slim">Похудение</label>
+            <p>
+            </p>
+              <label class="cat-data__label"><input type="radio" name="target" value="weight-gain">Набор массы</label>
+            </p>
+            <p>
+              <label class="cat-data__label"><input type="radio" name="target" value="unknown">Не знаю (Нужен ваш совет)</label>
+            </p>
+          </div>
+        </div>
       </fieldset>
       <fieldset class="cat-form__fieldset user-data">
         <legend class="user-data__title">Контактные данные (владельца кота)</legend>
-        <p>
-          <label class="user-data__label" for="user-email">E-mail:*</label>
-          <input class="user-data__input" id="user-email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
-        </p>
-        <p>
-          <label class="user-data__label" for="user-phone">Телефон:*</label>
-          <input class="user-data__input" id="user-phone" type="text" name="phone-number" placeholder="8 (960) 900-60-90" required>
-        </p>
+        <div class="user-data__wrapper">
+          <p>
+            <label class="user-data__label" for="user-email">E-mail:*</label>
+            <input class="user-data__input" id="user-email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+          </p>
+          <p>
+            <label class="user-data__label" for="user-phone">Телефон:*</label>
+            <input class="user-data__input" id="user-phone" type="text" name="phone-number" placeholder="8 (960) 900-60-90" required>
+          </p>
+        </div>
       </fieldset>
       <fieldset class="cat-form__fieldset comment">
         <legend class="comment__title">Комментарий</legend>
@@ -72,20 +82,22 @@
       </fieldset>
       <fieldset class="cat-form__fieldset optional">
         <legend class="optional__title">Дополнительно</legend>
-        <p>
-          <label class="optional__label"><input type="checkbox" name="sugar-substitute" checked>Сахарозаменитель</label>
-        </p>
-        <p>
-          <label class="optional__label"><input type="checkbox" name="drinking-water">Питьевая вода</label>
-        </p>
-        <p>
-          <label class="optional__label"><input type="checkbox" name="milk">Молоко</label>
-        </p>
-        <p>
-          <label class="optional__label"><input type="checkbox" name="vitamins">Витамины</label>
-        </p>
+        <div class="optional__wrapper">
+          <p class="optional__field">
+            <label class="optional__label"><input type="checkbox" name="sugar-substitute" checked>Сахарозаменитель</label>
+          </p>
+          <p class="optional__field">
+            <label class="optional__label"><input type="checkbox" name="drinking-water">Питьевая вода</label>
+          </p>
+          <p class="optional__field">
+            <label class="optional__label"><input type="checkbox" name="milk">Молоко</label>
+          </p>
+          <p class="optional__field">
+            <label class="optional__label"><input type="checkbox" name="vitamins">Витамины</label>
+          </p>
+        </div>
       </fieldset>
-      <button class="button cat-form__button" type="submit">Отправить заявку</button>
+      <button class="button button--submit cat-form__button" type="submit">Отправить заявку</button>
     </form>
     <p class="page-main__note">* — Обязательные поля</p>
   </main>
@@ -94,26 +106,28 @@
     <div class="page-footer__location location">
       <b class="location__invite">Приглашаем к сотрудничеству дилеров!</b>
       <p class="location__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-      <img class="location__map" src="http://placehold.it/320x360" width="320" height="360" alt="Карта">
     </div>
-    <a class="page-footer__logo">
-      <img class="page-footer__text-logo" src="http://placehold.it/128x24" width="128" height="24" alt="Cat Energy">
-    </a>
-    <div class="page-footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-        </li>
-      </ul>
-    </div>
-    <div class="page-footer__copyright copyright">
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    <img class="location__map" src="http://placehold.it/320x360" width="320" height="360" alt="Карта">
+    <div class="page-footer__wrapper">
+      <a class="page-footer__logo">
+        <img class="page-footer__text-logo" src="http://placehold.it/128x24" width="128" height="24" alt="Cat Energy">
+      </a>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
     </div>
   </footer>
   </body>
