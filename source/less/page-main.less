@@ -37,6 +37,10 @@
 }
 
 @media (min-width: @tablet) {
+  .page-main {
+    position: relative
+  }
+
   .page-main--indent {
     padding: 0;
   }
@@ -87,6 +91,8 @@
 
 @media (min-width: @desktop) {
   .page-main {
+    position: static;
+
     margin-top: -160px;
   }
 
@@ -101,7 +107,6 @@
     padding-top: 160px;
 
     background: url("../img/index-background-desktop.jpg") top right no-repeat;
-    background-color: #67ab3e;
     background-size: 50% auto;
   }
 
