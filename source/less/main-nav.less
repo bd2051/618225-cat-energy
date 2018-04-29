@@ -3,16 +3,73 @@
   padding: 0;
 }
 
+.main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  display: block;
+  width: 66px;
+  height: 66px;
+  margin: 0;
+  padding: 0;
+
+  background: transparent;
+  border: none;
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+
+  position: absolute;
+  top: 23px;
+  right: 20px;
+
+  width: 24px;
+  height: 2px;
+
+  background-color: #222222;
+  box-shadow: 0 8px 0 0 #222222, 0 16px 0 0 #222222;
+}
+
+/* .main-nav--closed .main-nav__toggle:active::before {
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 0 0 rgba(255, 255, 255, 0.3), 0 16px 0 0 rgba(255, 255, 255, 0.3);
+}
+ */
+.main-nav--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 31px;
+    right: 23px;
+
+    width: 24px;
+    height: 2px;
+
+    background-color: #222222;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+}
+
 @media (min-width: @tablet) {
   .main-nav__toggle {
     display: none;
-  }
-
-  .main-nav__list {
-    display: flex;
-    justify-content: space-around/* временно */;
-
-    width: 560px;
   }
 }
 
