@@ -3,6 +3,11 @@
 }
 
 .how-it-works__title {
+  margin: 0;
+  padding: 0;
+  padding-top: 16px;
+  padding-bottom: 10px;
+
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   line-height: 60px;
@@ -13,21 +18,68 @@
 .how-it-works__list {
   margin: 0;
   padding: 0;
+  padding-left: 80px;
+  padding-bottom: 41px;
 }
 
 .how-it-works__item {
+  position: relative;
+
   margin: 0;
   padding: 0;
+  padding-top: 20px;
+  padding-bottom: 6px;
 
   list-style: none;
 }
 
+.how-it-works__item::before {
+  content: "";
+
+  position: absolute;
+  top: 18px;
+  left: -80px;
+
+  display: block;
+  width: 60px;
+  height: 60px;
+}
+
+.how-it-works__item--leaf::before {
+  background: url("../img/advantage-leaf@1x.png") no-repeat center #68b738;
+}
+
+.how-it-works__item--powder::before {
+  background: url("../img/advantage-powder@1x.png") no-repeat center #68b738;
+}
+
+.how-it-works__item--dining::before {
+  background: url("../img/advantage-dining@1x.png") no-repeat center #68b738;
+}
+
+.how-it-works__item--clock::before {
+  background: url("../img/advantage-clock@1x.png") no-repeat center #68b738;
+}
+
+.how-it-works__text {
+  margin: 0;
+  padding: 0;
+}
+
+.how-it-works__number {
+  display: none;
+}
+
 @media (min-width: @tablet) {
   .how-it-works {
-    padding: 0 30px;
+    padding: 0;
+    padding-top: 14px;
   }
 
   .how-it-works__title {
+    padding: 0 30px;
+    padding-bottom: 42px;
+
     font-size: 60px;
     line-height: 60px;
   }
@@ -35,15 +87,51 @@
   .how-it-works__list {
     display: flex;
     flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
   }
 
   .how-it-works__item {
+    box-sizing: border-box;
     width: 50%;
+    padding: 0 30px;
+    padding-top: 30px;
+    padding-bottom: 103px;
+  }
+
+  .how-it-works__item::before {
+    position: static;
+
+    width: 80px;
+    height: 80px;
   }
 
   .how-it-works__text {
+    width: 245px;
+    padding-top: 32px;
+
     font-size: 16px;
     line-height: 24px;
+  }
+
+  .how-it-works__number {
+    position: absolute;
+    top: -10px;
+    right: 105px;
+    z-index: -10;
+
+    display: block;
+
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 281px;
+    line-height: 281px;
+    font-weight: 400;
+    color: #f2f2f2;
+    text-align: center;
+  }
+
+  .how-it-works__number--first {
+    right: 125px;
   }
 }
 
@@ -54,11 +142,25 @@
 
   .how-it-works__title {
     padding-left: 40px;
+    padding-top: 43px;
+  }
+
+  .how-it-works__list {
+    padding-bottom: 50px;
   }
 
   .how-it-works__item {
+    box-sizing: border-box;
     width: 25%;
     padding: 0 40px;
-    box-sizing: border-box;
+    padding-top: 30px;
+  }
+
+  .how-it-works__number {
+    right: 40px;
+  }
+
+  .how-it-works__number--first {
+    right: 55px;
   }
 }
