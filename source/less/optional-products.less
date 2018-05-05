@@ -33,12 +33,39 @@
     padding-bottom: 69px;
   }
 
+  .optional-products__relative {
+    position: relative;
+  }
+
   .optional-products__title {
     padding: 0 38px;
     padding-bottom: 80px;
 
     font-size: 36px;
     line-height: 36px;
+
+    &::before,
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 89px;
+      height: 3px;
+
+      background-color: #68b738;
+    }
+
+    &::before {
+      left: 0;
+
+      width: 28px;
+    }
+
+    &::after {
+      right: 0;
+
+      width: 327px;
+    }
   }
 }
 
@@ -47,5 +74,28 @@
     flex-grow: 1;
 
     padding: 0 40px;
+    padding-top: 67px;
+  }
+
+  .optional-products__title {
+    padding-left: 0;
+    padding-right: 0;
+
+    &::before,
+    &::after {
+      top: 90px;
+    }
+
+    &::before {
+      left: -70px;
+
+      width: 70px;
+    }
+
+    &::after {
+      right: -70px;
+
+      width: 958px;
+    }
   }
 }
