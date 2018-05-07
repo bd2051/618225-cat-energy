@@ -1,4 +1,6 @@
 .cat-form {
+  padding-top: 10px;
+
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -7,16 +9,17 @@
   text-transform: uppercase;
 }
 
-.cat-form__fieldset {
-  margin: 0;
-  padding: 0;
-
-  border: 0;
+.cat-form__button {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 17px;
 }
 
 @media (min-width: @tablet) {
   .cat-form {
     position: relative;
+
+    padding: 0;
 
     font-size: 20px;
     line-height: 20px;
@@ -24,5 +27,18 @@
 
   .cat-form__button {
     position: absolute;
+    bottom: -96px;
+    left: 51px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .cat-form {
+    padding: 0;
+  }
+
+  .cat-form__button {
+    bottom: -102px;
+    left: 90px;
   }
 }

@@ -1,4 +1,18 @@
+.user-data {
+  margin: 0;
+  padding: 0;
+
+  border: 0;
+  border-top: 3px solid #68b738;
+}
+
 .user-data__title {
+  width: 181px;
+  margin: 0;
+  padding: 0 20px;
+  padding-top: 28px;
+  padding-bottom: 10px;
+
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 24px;
@@ -7,13 +21,42 @@
   text-transform: none;
 }
 
+.user-data__wrapper {
+  padding: 0 20px;
+  padding-top: 10px;
+}
+
+.user-data__input-wrapper {
+  position: relative;
+
+  display: flex;
+  margin: 14px 0;
+}
+
+.user-data__label {
+  padding-right: 10px;
+  align-self: center;
+}
+
 .user-data__input {
+  flex-grow: 1;
+  height: 43px;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
   color: #444444;
   text-transform: uppercase;
+
+  border: 1px solid #e6e6e6;
+}
+
+.user-data__input[value] {
+  padding: 0 16px;
 }
 
 .user-data__input::-webkit-input-placeholder {
@@ -32,20 +75,93 @@
   color: #444444;
 }
 
+.user-data__icon-mail {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.user-data__icon-phone {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+}
+
 @media (min-width: @tablet) {
+  .user-data {
+    padding: 0 30px;
+  }
+
   .user-data__title {
+    width: 554px;
+    margin: 0;
+    padding: 0;
+    padding-left: 40px;
+    padding-top: 27px;
+    padding-bottom: 38px;
+
     font-size: 36px;
     line-height: 36px;
   }
 
+  .user-data__wrapper {
+    padding: 0 40px;
+    padding-top: 16px;
+  }
+
+  .user-data__input-wrapper {
+    margin: 21px 0;
+  }
+
+  .user-data__label {
+    padding-right: 17px;
+  }
+
   .user-data__input {
+    height: 50px;
+
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .user-data__input[value] {
+    padding: 0 20px;
+  }
+
+  .user-data__icon-mail {
+    top: 21px;
+  }
+
+  .user-data__icon-phone {
+    top: 17px;
   }
 }
 
 @media (min-width: @desktop) {
+  .user-data {
+    padding: 0 70px;
+  }
+
+  .user-data__title {
+    padding-top: 2px;
+    padding-bottom: 8px;
+  }
+
   .user-data__wrapper {
     display: flex;
+    justify-content: space-between;
+    padding-top: 44px;
+  }
+
+  .user-data__input-wrapper {
+    width: 570px;
+  }
+
+  .user-data__icon-mail {
+    right: 19px;
+  }
+
+  .user-data__icon-phone {
+    right: 17px;
   }
 }

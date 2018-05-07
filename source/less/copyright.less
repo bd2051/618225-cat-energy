@@ -1,5 +1,29 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
 .copyright__link {
+  padding-top: 31px;
+  padding-bottom: 33px;
+
   font-size: 16px;
   line-height: 16px;
   color: #444444;
+}
+
+.copyright__logo {
+  padding-top: 22px;
+}
+
+@media (min-width: @tablet) {
+  .copyright {
+    padding: 0;
+    padding-top: 36px;
+  }
+
+  .copyright__link {
+    margin-right: 21px;
+  }
 }

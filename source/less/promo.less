@@ -1,4 +1,8 @@
 .promo__text {
+  margin: 0;
+  padding: 0;
+  padding-top: 24px;
+
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
@@ -8,8 +12,22 @@
   text-align: center;
 }
 
+.promo__wrapper {
+  box-sizing: border-box;
+  padding-top: 31px;
+}
+
+.promo__index-can {
+  display: block;
+  margin: 0 auto;
+}
+
 @media (min-width: @tablet) {
   .promo__text {
+    width: 425px;
+    padding-left: 90px;
+    padding-top: 41px;
+
     font-size: 20px;
     line-height: 20px;
     color: #111111;
@@ -17,7 +35,7 @@
   }
 
   .promo__wrapper {
-    height: 609px;
+    height: 630px;
   }
 }
 
@@ -34,5 +52,9 @@
 
   .promo__wrapper {
     height: auto;
+  }
+
+  .promo__text {
+    padding-left: 190px;
   }
 }

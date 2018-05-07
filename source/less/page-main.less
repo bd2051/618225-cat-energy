@@ -1,14 +1,20 @@
 .page-main--indent {
-  padding: 0 20px;
+  padding-top: 15px;
 }
 
 .page-main__wrapper {
-  background: url("../img/index-background-mobile@1x.jpg") no-repeat;
-  background-color: #67ab3e;
+  padding-top: 27px;
+
+  background:
+    url("../img/index-background-mobile@1x.jpg") no-repeat,
+    linear-gradient(to bottom, #67ab3e 50%, #ffffff 50%);
   background-size: 100% auto;
 }
 
 .page-main__title {
+  margin: 0;
+  padding: 0;
+
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   line-height: 36px;
@@ -18,11 +24,27 @@
 }
 
 .page-main__title--other-page {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 28px;
+
   line-height: 60px;
   color: #111111;
+  text-align: left;
+
+  border-bottom: 1px solid #ededed;
+}
+
+.page-main__title--form {
+  padding-bottom: 12px;
+
+  border: none;
 }
 
 .page-main__text {
+  width: 230px;
+  padding: 0 20px;
+
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -32,18 +54,25 @@
 }
 
 .page-main__note {
+  margin-top: 21px;
+  margin-bottom: 32px;
+
   font-size: 14px;
   line-height: 16px;
+  text-align: center;
 }
 
 @media (min-width: @tablet) {
   .page-main--indent {
     padding: 0;
+    padding-top: 54px;
   }
 
   .page-main__wrapper {
     background: none;
-    padding: 0 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 54px;
   }
 
   .page-main__title {
@@ -58,50 +87,59 @@
 
   .page-main__title--other-page {
     width: auto;
-    padding: 0 30px;
-  }
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 25px;
 
-  .page-main__promo-text {
-    width: 425px;
-    padding-left: 90px;
+    border: none;
   }
 
   .page-main__text {
+    width: 335px;
     padding: 0 70px;
+    padding-top: 11px;
 
     font-size: 20px;
     line-height: 30px;
   }
 
-  .page-main__form {
-    padding: 0 70px;
-  }
-
   .page-main__note {
+    margin-top: 60px;
+    margin-bottom: 92px;
     padding-left: 415px;
 
     font-size: 16px;
     line-height: 16px;
+    text-align: left;
   }
 }
 
 @media (min-width: @desktop) {
   .page-main {
-    margin-top: -160px;
+    margin-top: -116px;
   }
 
   .page-main--indent {
-    padding: 0 70px;
     margin-top: 0;
+    padding: 0;
+    padding-top: 72px;
+  }
+
+  .page-main__text {
+    padding-left: 110px;
   }
 
   .page-main__wrapper {
-    min-height: 570px;
+    box-sizing: border-box;
+    min-height: 697px;
     padding: 0;
-    padding-top: 160px;
+    padding-top: 222px;
+    padding-bottom: 260px;
 
-    background: url("../img/index-background-desktop.jpg") top right no-repeat;
-    background-size: 50% auto;
+    background:
+      url("../img/index-background-desktop.jpg") top right no-repeat,
+      linear-gradient(to left, #67ab3e 50%, #ffffff 50%);
+    background-size: 50% auto, 100%;
   }
 
   .page-main__title {
@@ -109,19 +147,19 @@
   }
 
   .page-main__title--other-page {
-    padding-left: 40px;
-  }
-
-  .page-main__promo-text {
-    padding-left: 190px;
+    padding-left: 110px;
   }
 
   .page-main__catalog-wrapper {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 85px;
+    padding: 0 70px;
   }
 
   .page-main__note {
+    margin-top: 66px;
+    margin-bottom: 102px;
     padding-left: 760px;
   }
 }

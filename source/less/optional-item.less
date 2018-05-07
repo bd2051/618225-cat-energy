@@ -1,4 +1,15 @@
+.optional-item {
+  padding-bottom: 17px;
+
+  border-bottom: 1px solid #cdcdcd;
+}
+
 .optional-item__title {
+  margin: 0;
+  padding: 0;
+  padding-top: 14px;
+  padding-bottom: 6px;
+
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
@@ -11,14 +22,36 @@
   .optional-item {
     display: flex;
     flex-wrap: wrap;
+    padding: 0 38px;
+    padding-bottom: 27px;
+
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
   }
 
-  .optional-item__properties {
+  .optional-item .optional-item__properties {
     margin-left: auto;
+    margin-top: 29px;
   }
 
   .optional-item__title {
+    padding-top: 26px;
+    padding-bottom: 25px;
+
     font-size: 20px;
     line-height: 20px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .optional-item {
+    padding: 0;
+
+    border-left: none;
+    border-right: none;
+  }
+
+  .optional-item__button {
+    align-self: center;
   }
 }

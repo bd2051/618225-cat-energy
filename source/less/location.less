@@ -1,9 +1,17 @@
 .location {
   display: flex;
   padding: 0 20px;
+  padding-top: 28px;
+  padding-bottom: 24px;
+}
+
+.location--index-page {
+  background-color: #ffffff;
 }
 
 .location__invite {
+  width: 140px;
+
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -14,25 +22,66 @@
 }
 
 .location__address {
+  width: 140px;
+  margin: 0;
   margin-left: auto;
+  padding: 0;
 
   line-height: 20px;
-  text-align: right;
+  text-align: left;
+}
+
+.location__map-wrapper {
+  position: relative;
+
+  width: 320px;
+  height: 367px;
+  overflow: hidden;
 }
 
 .location__map {
-  width: 100%;
+  margin-top: -37px;
+}
+
+.location__marker {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  margin-left: -31.5px;
+  margin-bottom: -9px;
 }
 
 @media (min-width: @tablet) {
+  .location {
+    padding: 0 70px;
+    padding-top: 64px;
+    padding-bottom: 58px;
+  }
+
   .location__invite {
+    width: 165px;
+    padding-top: 2px;
+
     font-size: 20px;
     line-height: 25px;
   }
 
   .location__address {
+    width: 165px;
+
     font-size: 16px;
     line-height: 20px;
+    text-align: right;
+  }
+
+  .location__city {
+    display: block;
+    padding-top: 19px;
+  }
+
+  .location__map-wrapper {
+    width: 768px;
+    height: 396px;
   }
 }
 
@@ -41,10 +90,33 @@
     position: absolute;
     top: 95px;
     left: 110px;
+    z-index: 10;
 
     width: 570px;
-    min-height: 200px;
+    box-sizing: border-box;
+    padding: 0;
+    padding-top: 63px;
+    padding-bottom: 58px;
+    padding-left: 77px;
 
     background-color: #ffffff;
+  }
+
+  .location__address {
+    width: 155px;
+    padding-right: 90px;
+
+    text-align: left;
+  }
+
+  .location__map-wrapper {
+    width: 1440px;
+    height: 401px;
+  }
+
+  .location__marker {
+    left: 73.5%;
+    margin-left: -31.5px;
+    margin-bottom: -9px;
   }
 }

@@ -1,24 +1,59 @@
 .promo-action {
-  background: url("../img/gift-photo-mobile@1x.jpg") no-repeat;
+  box-sizing: border-box;
+  min-height: 289px;
+  margin: 0 20px;
+  margin-top: 39px;
+  margin-bottom: 35px;
+  padding-top: 187px;
+
+  background:
+    url("../img/icon-gift.svg") 50% 28.5% no-repeat,
+    url("../img/gift-photo-mobile@1x.jpg") no-repeat;
   background-color: #6fb346;
-  background-size: 100% auto;
+  background-size: 55px 60px, 100% auto;
 }
 
 .promo-action__text {
+  margin: 0;
+  padding: 0;
+
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+  text-align: center;
 }
 
 @media (min-width: @tablet) {
   .promo-action {
+    min-height: 200px;
     margin: 0 30px;
+    margin-bottom: 76px;
+    padding-top: 73px;
+    background-position: 14% 46.5%, 0% 68%;
+  }
+
+  .promo-action__text {
+    margin-left: 423px;
+
+    text-align: left;
   }
 }
 
 @media (min-width: @desktop) {
   .promo-action {
+    width: 245px;
+    min-height: auto;
+
     margin: 0 40px;
-    margin-top: 150px;
+    margin-top: 184px;
+    padding-top: 185px;
+
+    background-position: 50% 28.5%, 0%;
+  }
+
+  .promo-action__text {
+    margin: 0;
+
+    text-align: center;
   }
 }
