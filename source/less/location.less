@@ -40,6 +40,8 @@
 }
 
 .location__map {
+  width: 320px;
+  height: 400px;
   margin-top: -37px;
 }
 
@@ -47,6 +49,7 @@
   position: absolute;
   left: 50%;
   bottom: 50%;
+
   margin-left: -31.5px;
   margin-bottom: -9px;
 }
@@ -83,6 +86,22 @@
     width: 768px;
     height: 396px;
   }
+
+  .location__map {
+    width: 768px;
+    height: 400px;
+    margin-top: -4px;
+  }
+
+  .location__marker {
+    left: 50%;
+    bottom: 41%;
+
+    width: 124px;
+    height: 106px;
+    margin-left: -62px;
+    margin-bottom: -18px;
+  }
 }
 
 @media (min-width: @desktop) {
@@ -114,9 +133,13 @@
     height: 401px;
   }
 
+  .location__map {
+    width: 1440px;
+    height: 400px;
+    margin-top: 0;
+  }
+
   .location__marker {
     left: 73.5%;
-    margin-left: -31.5px;
-    margin-bottom: -9px;
   }
 }

@@ -2,9 +2,9 @@
 @tablet: 768px;
 @desktop: 1440px;
 @slider-position: 0.5;
-@cut-image-tablet: 677px * @slider-position;
-@cut-background-tablet: 50% + (((677 * (0.5 - @slider-position)) / 768) * 100%);
+@cut-image-tablet: (690px * @slider-position) - 8px;
+@cut-background-tablet: 50% + (((690 * (0.5 - @slider-position)) / 768) * 100%);
 @cut-vertical-tablet: 255px;
-@cut-image-desktop: 677px * (@slider-position + 0.035);
-@cut-background-desktop: 27.5% + (((677 * (0.5 - @slider-position)) / 1440) * 100%);
+@cut-image-desktop: (690px * (@slider-position + 0.035)) - 4px;
+@cut-background-desktop: 27.5% + (((690 * (0.5 - @slider-position)) / 1440) * 100%);
 @cut-vertical-desktop: 209px;
