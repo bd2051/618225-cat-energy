@@ -142,7 +142,11 @@
       <p class="location__address">ул. Большая Конюшенная, д. 19/8 <span class="location__city">Санкт-Петербург</span></p>
     </div>
     <div class="location__map-wrapper">
-      <img class="location__map" src="img/bg-map-mobile@1x.png" alt="Карта">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png">
+        <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
+        <img class="location__map" src="img/bg-map-mobile@1x.png" alt="Карта">
+      </picture>
       <img class="location__marker" src="img/map-pin.png" width="63" height="53" alt="Метка Кэт энерджи">
     </div>
     <div class="page-footer__wrapper">
