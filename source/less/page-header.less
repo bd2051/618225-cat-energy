@@ -16,6 +16,14 @@
   padding-bottom: 13px;
 }
 
+.page-header__logo:hover {
+  opacity: 0.8;
+}
+
+.page-header__logo:active {
+  opacity: 0.6;
+}
+
 @media (min-width: @tablet) {
   .page-header {
     display: flex;
@@ -29,6 +37,11 @@
     padding-left: 30px;
     padding-top: 24px;
   }
+
+  .page-header__logo-image {
+    width: 173px;
+    height: 58px;
+  }
 }
 
 @media (min-width: @desktop) {
@@ -39,5 +52,10 @@
   .page-header__logo {
     padding-left: 110px;
     padding-top: 54px;
+  }
+
+  .page-header__logo-image {
+    width: 202px;
+    height: 59px;
   }
 }

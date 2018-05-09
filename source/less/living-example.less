@@ -241,11 +241,14 @@
   .living-example__image-wrapper {
     position: relative;
 
-    width: 677px;
-    height: 499px - @cut-vertical-tablet;
+    width: 690px;
+    height: 517px - @cut-vertical-tablet;
     margin-top: @cut-vertical-tablet;
-    padding: 0 45.5px;
-    padding-top: 100px;
+    padding-left: 47px;
+    padding-right: 31px;
+    padding-top: 86px;
+    padding-bottom: 20px;
+
 
     background: linear-gradient(to left, #eaeaea @cut-background-tablet, #f2f2f2 @cut-background-tablet);
   }
@@ -253,23 +256,23 @@
   .living-example__image {
     position: absolute;
 
-    width: 677px;
-    height: 499px;
+    width: 690px;
+    height: 517px;
     margin: 0;
     margin-top: 0 - @cut-vertical-tablet;
     padding: 0;
 
-    clip: rect(0, @cut-image-tablet, 499px, 0);
+    clip: rect(0, @cut-image-tablet, 517px, 0);
   }
 
   .living-example__image--after {
     display: block;
 
-    clip: rect(0, 677px, 499px, @cut-image-tablet);
+    clip: rect(0, 690px, 517px, @cut-image-tablet);
   }
 
   .living-example__slider {
-    padding-top: 23px;
+    padding-top: 0;
     padding-bottom: 69px;
 
     background: linear-gradient(to left, #eaeaea @cut-background-tablet, #f2f2f2 @cut-background-tablet);
@@ -286,6 +289,14 @@
     border-bottom: 1px dotted #bebebe;
   }
 
+  .living-example__slider-label:hover {
+    border-bottom: 1px solid #989898;
+  }
+
+  .living-example__slider-label:active {
+    border-bottom: none;
+  }
+
   .living-example__slider-button {
     width: 428px;
     height: 6px;
@@ -295,6 +306,7 @@
     background-color: #dcdcdc;
     border: none;
     border-radius: 4px;
+    outline: none;
   }
 
   .living-example__slider-button::before {
@@ -313,6 +325,14 @@
     box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.15);
     border: solid 12px #ffffff;
     border-radius: 16px;
+  }
+
+  .living-example__slider-button:hover::before {
+    box-shadow: 0 3px 5px 2px rgba(0, 0, 0, 0.25);
+  }
+
+  .living-example__slider-button:active::before {
+    opacity: 0.3;
   }
 }
 
@@ -370,11 +390,9 @@
 
   .living-example__image-wrapper {
     position: absolute;
-    right: 82px;
-    top: -174px;
+    right: 70px;
+    top: -188px;
 
-    width: 677px;
-    height: 499px;
     margin: 0;
     padding: 0;
 
@@ -385,11 +403,11 @@
     margin: 0;
     padding: 0;
 
-    clip: rect(0, @cut-image-desktop, 499px, 0);
+    clip: rect(0, @cut-image-desktop, 517px, 0);
   }
 
   .living-example__image--after {
-    clip: rect(0, 677px, 499px, @cut-image-desktop);
+    clip: rect(0, 690px, 517px, @cut-image-desktop);
   }
 
   .living-example__slider {

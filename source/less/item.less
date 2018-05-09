@@ -21,6 +21,8 @@
 
 .item__image {
   float: left;
+  width: 140px;
+  height: 144px;
 }
 
 .item__properties {
@@ -50,9 +52,18 @@
 
   .item__image {
     position: absolute;
-    left: 25%;
+    left: 0;
     bottom: 0;
     float: none;
+
+    width: 324px;
+    height: 172px;
+    padding-bottom: 12px;
+  }
+
+  .item__image--big {
+    width: 324px;
+    height: 208px;
   }
 
   .item__properties {
@@ -80,7 +91,7 @@
   .item {
     width: 245px;
     margin: 0 40px;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
     box-sizing: border-box;
 
     background: linear-gradient(to bottom, #ffffff 24.5%, #f2f2f2 24.5%);
@@ -88,5 +99,16 @@
 
   .item__image-wrapper {
     height: 277px;
+  }
+
+  .item__image {
+    width: 245px;
+    height: 172px;
+    padding-bottom: 11px;
+  }
+
+  .item__image--big {
+    width: 324px;
+    height: 208px;
   }
 }

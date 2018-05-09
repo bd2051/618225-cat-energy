@@ -1,26 +1,33 @@
 .copyright {
   display: flex;
   justify-content: space-between;
+  margin-top: 22px;
+  margin-bottom: 33px;
   padding: 0 20px;
 }
 
 .copyright__link {
-  padding-top: 31px;
-  padding-bottom: 33px;
+  padding-top: 9px;
 
   font-size: 16px;
   line-height: 16px;
   color: #444444;
 }
 
-.copyright__logo {
-  padding-top: 22px;
+.copyright:hover .copyright__logo * {
+  fill: #68b738;
+}
+
+.copyright:active {
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet) {
   .copyright {
+    margin: 0;
+    margin-top: 58px;
+    margin-bottom: 55px;
     padding: 0;
-    padding-top: 36px;
   }
 
   .copyright__link {
