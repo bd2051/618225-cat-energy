@@ -48,7 +48,7 @@
   height: 28px;
 
   background-color: #ffffff;
-  border: 1px solid #cfcfcf;
+  border: 1px solid #cdcdcd;
 }
 
 .optional__checkbox-input:focus + .optional__checkbox-indicator {
@@ -73,13 +73,13 @@
   background: url("../img/icon-tick.svg") no-repeat;
 }
 
-/* .optional__checkbox-input:disabled + .optional__checkbox-indicator {
-  background: url("../img/checkbox-off-disabled.svg") no-repeat ;
+.optional__checkbox-input:hover + .optional__checkbox-indicator {
+  border: 1px solid #bababa;
 }
 
-.optional__checkbox-input:disabled:checked + .optional__checkbox-indicator {
-  background: url("../img/checkbox-on-disabled.svg") no-repeat ;
-} */
+.optional__checkbox-input:active + .optional__checkbox-indicator {
+  opacity: 0.3;
+}
 
 @media (min-width: @tablet) {
   .optional {
