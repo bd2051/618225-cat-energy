@@ -18,5 +18,12 @@ indent_style = space
 insert_final_newline = true
 trim_trailing_whitespace = true
 
+[picturefill.js]
+end_of_line = unset
+indent_size = unset
+indent_style = unset
+insert_final_newline = unset
+trim_trailing_whitespace = unset
+
 [*.md]
 trim_trailing_whitespace = false
