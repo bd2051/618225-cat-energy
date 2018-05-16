@@ -31,29 +31,6 @@
   text-align: left;
 }
 
-.location__map-wrapper {
-  position: relative;
-
-  width: 320px;
-  height: 367px;
-  overflow: hidden;
-}
-
-.location__map {
-  width: 320px;
-  height: 400px;
-  margin-top: -37px;
-}
-
-.location__marker {
-  position: absolute;
-  left: 50%;
-  bottom: 50%;
-
-  margin-left: -31.5px;
-  margin-bottom: -9px;
-}
-
 @media (min-width: @tablet) {
   .location {
     padding: 0 70px;
@@ -81,34 +58,13 @@
     display: block;
     padding-top: 19px;
   }
-
-  .location__map-wrapper {
-    width: 768px;
-    height: 396px;
-  }
-
-  .location__map {
-    width: 768px;
-    height: 400px;
-    margin-top: -4px;
-  }
-
-  .location__marker {
-    left: 50%;
-    bottom: 41%;
-
-    width: 124px;
-    height: 106px;
-    margin-left: -62px;
-    margin-bottom: -18px;
-  }
 }
 
 @media (min-width: @desktop) {
   .location {
     position: absolute;
     top: 95px;
-    left: 110px;
+    left: ~"calc((50% - 650px) + 40px)";
     z-index: 10;
 
     width: 570px;
@@ -126,20 +82,5 @@
     padding-right: 90px;
 
     text-align: left;
-  }
-
-  .location__map-wrapper {
-    width: 1440px;
-    height: 401px;
-  }
-
-  .location__map {
-    width: 1440px;
-    height: 400px;
-    margin-top: 0;
-  }
-
-  .location__marker {
-    left: 73.5%;
   }
 }

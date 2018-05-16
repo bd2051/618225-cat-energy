@@ -1,0 +1,63 @@
+.map {
+  position: relative;
+
+  width: 320px;
+  height: 367px;
+  overflow: hidden;
+}
+
+.map__image {
+  width: 320px;
+  height: 400px;
+  margin-top: -37px;
+}
+
+.map__marker {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+
+  margin-left: -31.5px;
+  margin-bottom: -9px;
+}
+
+@media (min-width: @tablet) {
+  .map {
+    width: 768px;
+    height: 396px;
+  }
+
+  .map__image {
+    width: 768px;
+    height: 400px;
+    margin-top: -4px;
+  }
+
+  .map__marker {
+    left: 50%;
+    bottom: 41%;
+
+    width: 124px;
+    height: 106px;
+    margin-left: -62px;
+    margin-bottom: -18px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .map {
+    width: auto;
+    height: 401px;
+    margin: 0 ~"calc(50% - 720px)";
+  }
+
+  .map__image {
+    width: 1440px;
+    height: 400px;
+    margin-top: 0;
+  }
+
+  .map__marker {
+    left: 73.5%;
+  }
+}
