@@ -1,5 +1,5 @@
 .body-wrapper {
-  width: @mobile/* временно */;
+  width: @mobile;
   margin: 0 auto;
 
   outline: 1px solid black/* временно */;
@@ -7,12 +7,14 @@
 
 @media (min-width: @tablet) {
   .body-wrapper {
-    width: @tablet/* временно */;
+    width: @tablet;
   }
 }
 
 @media (min-width: @desktop) {
   .body-wrapper {
-    width: @desktop/* временно */;
+    width: 100%;
+    min-width: @desktop;
+    max-width: @desktop + 140;
   }
 }

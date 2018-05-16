@@ -341,8 +341,16 @@
 
 @media (min-width: @desktop) {
   .living-example {
+    padding: 0 ~"calc(50% - 650px)";
+
+    background: linear-gradient(to left, #eaeaea 50%, #f2f2f2 50%);
+  }
+
+  .living-example__background-wrapper {
     position: relative;
 
+    width: 1300px;
+    margin: 0 auto;
     margin-top: @cut-vertical-desktop;
     padding-bottom: 73px;
 
@@ -352,7 +360,7 @@
 
   .living-example__title {
     margin-top: 0 - @cut-vertical-desktop;
-    padding: 0 110px;
+    padding: 0 40px;
     padding-top: 75px;
     padding-bottom: 147px;
   }
@@ -360,13 +368,13 @@
   .living-example__text {
     width: 436px;
     padding: 0;
-    padding-left: 110px;
+    padding-left: 40px;
     padding-bottom: 68px;
   }
 
   .living-example__common-wrapper {
     width: 366px;
-    padding: 0 110px;
+    padding: 0 40px;
   }
 
   .living-example__wrapper {
@@ -393,7 +401,7 @@
 
   .living-example__image-wrapper {
     position: absolute;
-    right: 70px;
+    right: 0;
     top: -188px;
 
     margin: 0;
@@ -415,7 +423,7 @@
 
   .living-example__slider {
     position: absolute;
-    right: 89px;
+    right: 19px;
     top: 368px;
 
     width: 615px;
