@@ -119,6 +119,12 @@
     line-height: 16px;
     text-align: left;
   }
+
+  .page-main__catalog-wrapper {
+    margin-top: 89px;
+
+    border-top: 3px solid #68b738;
+  }
 }
 
 @media (min-width: @desktop) {
@@ -165,14 +171,14 @@
   }
 
   .page-main__title--other-page {
-    padding-left: 110px;
+    padding-left: ~"calc((50% - 650px) + 40px)";
   }
 
   .page-main__catalog-wrapper {
     display: flex;
     justify-content: space-between;
     margin-bottom: 85px;
-    padding: 0 70px;
+    padding: 0 ~"calc(50% - 650px)";
   }
 
   .page-main__note {
