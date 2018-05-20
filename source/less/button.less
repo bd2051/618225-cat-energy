@@ -52,16 +52,20 @@
 }
 
 .button--submit {
-  width: 280px;
+  width: ~"calc(100% - 40px)";
 }
 
 @media (min-width: @tablet) {
   .button {
-    width: 249px;
+    width: 77%;
     padding: 10px 0;
 
     font-size: 16px;
     line-height: 20px;
+  }
+
+  .button--show-all {
+    width: 89%;
   }
 
   .button--programs {
