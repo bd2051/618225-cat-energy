@@ -6,6 +6,7 @@
 }
 
 .item__title {
+  min-height: 40px;
   margin: 0;
   padding: 0;
   padding-top: 22px;
@@ -27,13 +28,14 @@
 
 .item__properties {
   margin-top: 11px;
-  margin-bottom: 23px;
+  margin-bottom: 8.2%;
 }
 
 @media (min-width: @tablet) {
   .item {
-    width: 324px;
-    margin: 0 30px;
+    max-width: 430px;
+    width: 42%;
+    margin: 0 auto;
     margin-top: 45px;
     padding: 0;
     padding-bottom: 40px;
@@ -46,8 +48,9 @@
   .item__image-wrapper {
     position: relative;
 
-    width: 100%;
+    width: 324px;
     height: 233px;
+    margin: 0 auto;
   }
 
   .item__image {
@@ -72,6 +75,7 @@
   }
 
   .item__title {
+    min-height: auto;
     width: 155px;
     margin: 0 auto;
     padding: 0;
@@ -108,7 +112,6 @@
   }
 
   .item__image--big {
-    width: 324px;
     height: 208px;
   }
 }
