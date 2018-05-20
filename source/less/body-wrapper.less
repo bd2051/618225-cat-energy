@@ -1,20 +1,13 @@
 .body-wrapper {
-  width: @mobile;
+  width: 100%;
+  min-width: 320px;
   margin: 0 auto;
 
-  outline: 1px solid black/* временно */;
-}
-
-@media (min-width: @tablet) {
-  .body-wrapper {
-    width: @tablet;
-  }
+  outline: 1px solid #111111;
 }
 
 @media (min-width: @desktop) {
   .body-wrapper {
-    width: 100%;
     min-width: @desktop;
-    max-width: @desktop + 140;
   }
 }
